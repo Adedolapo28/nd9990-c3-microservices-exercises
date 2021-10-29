@@ -17,7 +17,7 @@ script:
   - docker --version # print the version for logging
   # - docker build -t simple-node .
   # - docker tag simple-node YOUR_DOCKER_HUB/simple-node:latest
-  - docker-compose -f docker-compose-build.yaml build --parallel
+  - docker-compose -f ./project/docker-compose-build.yaml build --parallel
   #  tagging
   - docker tag reverseproxy taofeekat28/reverseproxy:v1
   - docker tag udagram-api-user taofeekat28/udagram-api-user:v1
