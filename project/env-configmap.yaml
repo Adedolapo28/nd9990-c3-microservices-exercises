@@ -1,0 +1,13 @@
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-config
+data:
+  POSTGRES_HOST: udagram-microservice.c4wdoxybalbk.us-east-1.rds.amazonaws.com
+  POSTGRES_DB: postgres
+  AWS_BUCKET: udagram-microservices-117492602977-dev
+  AWS_REGION: us-east-1
+  AWS_PROFILE: dolapo_udacity
+  URL: http://localhost:8100
+  JWT_SECRET: testing
