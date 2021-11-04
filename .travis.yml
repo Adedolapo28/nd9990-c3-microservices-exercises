@@ -19,6 +19,7 @@ script:
   # - docker tag simple-node YOUR_DOCKER_HUB/simple-node:latest
   - docker-compose -f ./project/docker-compose-build.yaml build --parallel
   #  tagging
+  # TODO: append automatically. could use a bash script to pull the image, get the tag, increment it
   - docker tag reverseproxy taofeekat28/reverseproxy:v1
   - docker tag udagram-api-user taofeekat28/udagram-api-user:v1
   - docker tag udagram-api-feed taofeekat28/udagram-api-feed:v1
